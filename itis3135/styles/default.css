@@ -1,0 +1,36 @@
+body{
+    background-color: lightcoral;
+    text-align: center;
+    color: palegoldenrod;
+    font-family: Helvetica;
+    
+}
+a{
+    color: peachpuff;
+    text-decoration: none;
+}
+a:hover{
+    color: paleturquoise;
+}
+main{
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h2{
+    text-align: center;
+}
+img{
+    width: 50%;
+}
+figure{
+    text-align: center;
+    font-style: italic;
+}
+ul{
+    text-align: left;
+}
+li{
+    text-align: left;
+    margin: 10px;
+}
