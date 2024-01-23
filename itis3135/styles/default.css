@@ -34,3 +34,6 @@ li{
     text-align: left;
     margin: 10px;
 }
+html{
+    border: 20px solid peachpuff;
+}
