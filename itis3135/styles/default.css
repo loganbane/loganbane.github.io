@@ -38,3 +38,12 @@ html{
     border: 20px solid peachpuff;
     padding: none;
 }
+main{
+    text-align: center;
+}
+img{
+    border: 5px solid peachpuff;
+}
+.noborder{
+    border: none;
+}
