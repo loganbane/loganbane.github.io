@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logan Bane Lavish Blowfish || ITIS 3135 Contract</title>
+    <title>Logan Bane Lavish Blowfish || ITIS 3135 Forms</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
@@ -20,15 +20,45 @@
             ||
             <a href="forms.html">Forms</a>
         </nav>
-
     </header>
     <main>
-        <h2>Contract</h2>
-        <p>I, Logan Riley Bane agree to abide by the terms in my Spring 2024 3135 091 Web App Design and Development with my instructor, D.I. von Briesen.
-            I understand that all work that I do on my school and personal websites will be publicly available to the world. I will not put information there that is inappropriate for schoolwork, or that I wish to keep private.
-            Signed:
-                  <i>Logan Riley Bane, 20 January 2024.</i> 
-            </p>
+        <h2>Forms</h2>
+        <form action="#" method="post">
+            <div class="left">
+                <label for="name">Name:</label>
+                <input type="text" required placeholder="Enter your name">
+            </div>
+            <div class="left">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" required size="10" required placeholder="(---) --- ----">
+            </div>
+            <div class="left">
+                <label for="email">Email Address:</label>
+                <input type="email" required placeholder="Enter your email">
+            </div class="left">
+            <fieldset>
+                <legend>Check for Types of Shells</legend>
+                <label><input type="checkbox" name="checkbox1">Sand Dollar</label>
+                <label><input type="checkbox" name="checkbox2">Conch Shell</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Type of use</legend>
+                <label><input type="radio" value="option1">Commercial</label>
+                <label><input type="radio" value="option2">Personal</label>
+            </fieldset>
+
+            <label for="dropdown">Select Option:</label>
+            <select id="dropdown" name="dropdown">
+                <option value="option0">Select an Option</option>
+                <option value="option1">I would like to sign up for a Premium Account</option>
+                <option value="option2">I would like to sign up for a Free Account</option>
+            </select>
+            <div>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
     </main>
     <footer>
         <nav>
