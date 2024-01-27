@@ -47,3 +47,34 @@ img{
 .noborder{
     border: none;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+th, td {
+    border: 4px solid peachpuff;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: peachpuff;
+    color: teal;
+}
+
+tr:nth-child(even) {
+    background-color: teal;
+    color: lightsalmon
+}
+tr:nth-child(odd) {
+    background-color: lightsalmon;
+    color: teal;
+}
+figure {
+    margin-top: 20px;
+}
+figcaption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
