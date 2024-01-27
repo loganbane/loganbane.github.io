@@ -36,7 +36,7 @@ li{
 }
 html{
     border: 20px solid peachpuff;
-    padding: none;
+    padding: 0;
 }
 main{
     text-align: center;
