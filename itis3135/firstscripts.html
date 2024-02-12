@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logan Bane Lavish Blowfish || ITIS 3135 || Forms</title>
+    <title>Logan Bane Lavish Blowfish || ITIS 3135 || First Scripts</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
@@ -25,45 +25,24 @@
         <nav>
             <a href="stuff/My%20CRpyW*b%20s$t.htm">CRAPPY</a>
         </nav>
+
     </header>
     <main>
-        <h2>Forms</h2>
-        <form action="#" method="post">
-            <div class="left">
-                <label for="text">Name:</label>
-                <input type="text" id='text' required placeholder="Enter your name">
-            </div>
-            <div class="left">
-                <label for="tel">Phone Number:</label>
-                <input type="tel" id="tel" required size="10" placeholder="(---) --- ----">
-            </div>
-            <div class="left">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" required placeholder="Enter your email">
-            </div>
-            <fieldset>
-                <legend>Check for Types of Shells</legend>
-                <label><input type="checkbox" name="checkbox1">Sand Dollar</label>
-                <label><input type="checkbox" name="checkbox2">Conch Shell</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Type of use</legend>
-                <label><input type="radio" value="option1">Commercial</label>
-                <label><input type="radio" value="option2">Personal</label>
-            </fieldset>
-
-            <label for="dropdown">Select Option:</label>
-            <select id="dropdown" name="dropdown">
-                <option value="option0">Select an Option</option>
-                <option value="option1">I would like to sign up for a Premium Account</option>
-                <option value="option2">I would like to sign up for a Free Account</option>
-            </select>
-            <div>
-                <button type="reset">Reset</button>
-                <button type="submit">Submit</button>
-            </div>
+        <h3 id="time">Head</h3>
+        <form id="userForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="feelings">How are you feeling?</label>
+            <input type="text" id="feelings" name="feelings" required>
+            <br>
+            <label for="favoriteNumber">Your Favorite Number:</label>
+            <input type="text" id="favoriteNumber" name="favoriteNumber" required>
+            <br>
+            <button type="button" onclick="submitForm()">Submit</button>
         </form>
+    
+        <script src="htmlinclude.js"></script>
     </main>
     <footer>
         <nav>
@@ -87,6 +66,7 @@
             <img style="border:0;width:88px; height: 31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="valid Css!">
         </a>
     </footer>
+    <script src="scripts/htmlinclude.js"></script>
     <script>
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
