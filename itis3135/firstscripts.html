@@ -5,34 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logan Bane Lavish Blowfish || ITIS 3135 || First Scripts</title>
     <link rel="stylesheet" href="styles/default.css">
+    <script src="scripts/defaultscripts.js"></script>
 </head>
 <body>
     <div data-include="components/header.html"></div>
     <main>
-        <h3 id="time">Head</h3>
-        <form id="userForm">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="feelings">How are you feeling?</label>
-            <input type="text" id="feelings" name="feelings" required>
-            <br>
-            <label for="favoriteNumber">Your Favorite Number:</label>
-            <input type="text" id="favoriteNumber" name="favoriteNumber" required>
-            <br>
-            <button type="button" onclick="submitForm()">Submit</button>
-        </form>
-    
-        <script src="htmlinclude.js"></script>
+        <h3 id="dateTime"></h3>
+        <label for="userName">Enter your name:</label>
+        <input type="text" id="userName">
+        <br>
+        <label for="userMood">How are you feeling?</label>
+        <input type="text" id="userMood">
+
+        <button onclick="processUserInput()">Submit</button>
+        <h3 id="greeting"></h3>
+        <label for="favoriteNumber">Enter your favorite number:</label>
+        <input type="text" id="favoriteNumber">
+        <button onclick="displayFavoriteNumber()">Click me</button>
+        <h3 id="result"></h3>   
+        <button onclick="generateFishName()">Generate Fish Name</button>
+        <button onclick="estimateShellSize()">Estimate Shell Size</button>
+        <button onclick="fishJokeOfTheDay()">Fish Joke of the Day</button>
+        <button onclick="suggestSeafoodRecipe()">Suggest Seafood Recipe</button>
+        <button onclick="oceanRiddleChallenge()">Ocean Riddle Challenge</button>    
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/htmlinclude.js"></script>
+    <script src="scripts/HTMLInclude.js"></script>
     <script>
+        // Assuming this script is for validation links
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
-    <script src="scripts/HTMLInclude.js"></script>
-
 </body>
-
 </html>
