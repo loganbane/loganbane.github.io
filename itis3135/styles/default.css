@@ -3,7 +3,7 @@ body{
     text-align: center;
     color: palegoldenrod;
     font-family: Helvetica;
-    
+    font-size: 14pt;
 }
 a{
     color: peachpuff;
@@ -14,8 +14,9 @@ a:hover{
 }
 main{
     text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 60%;
 }
 h2{
     text-align: center;
@@ -32,7 +33,7 @@ ul{
 }
 li{
     text-align: left;
-    margin: 10px;
+    margin: auto;
 }
 html{
     border: 20px solid peachpuff;
@@ -105,19 +106,34 @@ input::placeholder {
 
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
-    #colorbox {
-        background-color:yellow;
+    .intro{
+        width: 40%;
     }
+    main{
+        max-width: 1200px;
+    }
+
 }
 /* Rule Overrides For Tablet Devices */
 @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
-    #colorbox {
-        background-color:orange;
+    .intro{
+        width: 40%;
+    }
+    main{
+        max-width: 780px;
     }
 }
 /* Rule Overrides For Mobile Devices */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
-    #colorbox {
-        background-color:red;
+    main{
+        max-width: 400px;
     }
+    .intro{
+        width: 100%;
+        border-width: 1px;
+    }
+    
+    
+
+    
 }
