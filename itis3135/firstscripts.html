@@ -8,7 +8,9 @@
     <script src="scripts/defaultscripts.js"></script>
 </head>
 <body>
-    <div data-include="components/header.html"></div>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
     <main>
         <h3 id="dateTime"></h3>
         <label for="userName">Enter your name:</label>
@@ -29,13 +31,14 @@
         <button onclick="suggestSeafoodRecipe()">Suggest Seafood Recipe</button>
         <button onclick="oceanRiddleChallenge()">Ocean Riddle Challenge</button>    
     </main>
-    <div data-include="components/footer.html"></div>
-    <script src="scripts/htmlinclude.js"></script>
-    <script src="scripts/HTMLInclude.js"></script>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
     <script>
         // Assuming this script is for validation links
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
+    <script src="scripts/HTML.Include.min.js"></script>
 </body>
 </html>

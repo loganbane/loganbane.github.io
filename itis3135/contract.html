@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
-    <div data-include="components/header.html"></div>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
     <main>
         <h2>Contract</h2>
         <p>I, Logan Riley Bane agree to abide by the terms in my Spring 2024 3135 091 Web App Design and Development with my instructor, D.I. von Briesen.
@@ -16,12 +18,15 @@
                   <i>Logan Riley Bane, 20 January 2024.</i> 
             </p>
     </main>
-    <div data-include="components/footer.html"></div>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
     <script>
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
-     <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/HTML.Include.min.js"></script>
+    
 </body>
 
 </html>
