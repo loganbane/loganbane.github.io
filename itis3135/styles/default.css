@@ -103,7 +103,14 @@ input {
 input::placeholder {
     color: teal;
 }
-
+textarea{
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 3px solid peachpuff;
+    Background-color: lightsalmon;
+    color: teal;
+    border-radius: 5px;
+}
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
     .intro{

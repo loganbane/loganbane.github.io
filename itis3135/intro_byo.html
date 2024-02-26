@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logan Bane Lavish Blowfish || ITIS 3135 || intro_byo</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Build Your Own Introduction</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+        <form id="introForm" onsubmit="submitForm(); return false;">
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <br>
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" required>
+            <br>
+            <label for="image">Image (PNG or JPG):</label>
+            <input type="file" id="image" accept=".png, .jpg" required>
+            <br>
+            <label for="imageCaption">Image Caption:</label>
+            <input type="text" id="imageCaption" required>
+            <br>
+            <label for="personalBackground">Personal Background:</label>
+            <textarea id="personalBackground" required></textarea>
+            <br>
+
+            <label for="professionalBackground">Professional Background:</label>
+            <textarea id="professionalBackground" required></textarea>
+            <br>
+
+            <label for="academicBackground">Academic Background:</label>
+            <textarea id="academicBackground" required></textarea>
+            <br>
+
+            <label for="webDevelopmentBackground">Background in Web Development:</label>
+            <textarea id="webDevelopmentBackground" required></textarea>
+            <br>
+            <label for="computerPlatform">Primary Computer Platform:</label>
+            <input type="text" id="computerPlatform" required>
+            <br>
+            <label for="course1">Courses currently taking:</label>
+            <div id="coursesContainer">
+            <input type="text" id="course1" class="course" required>
+            <button type="button" onclick="addCourseTextBox()">Add Course</button>
+            </div>
+            <br>
+            <label for="funnyThing">Funny thing?</label>
+            <input type="text" id="funnyThing">
+            <br>
+            <label for="anythingElse">Anything else?</label>
+            <textarea id="anythingElse"></textarea>
+            <br>
+            <label>
+                <input type="checkbox" id="agreeCheckbox" required>
+                I understand that what is on this page is not password protected,
+                and I will not put anything here that I don’t want publicly available.
+            </label>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+        <div id="formResult">
+        </div>
+
+        <a href="#" onclick="resetForm()">Reset</a>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTML.Include.min.js"></script>
+    <script src="scripts/byoscript.js"></script>
+</body>
+</html>
