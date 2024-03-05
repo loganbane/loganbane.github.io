@@ -111,6 +111,28 @@ textarea{
     color: teal;
     border-radius: 5px;
 }
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.calculator__display {
+    grid-column: span 4;
+    background-color: peachpuff;
+    padding: 10px;
+    text-align: right;
+    font-size: 1.5em;
+    color: teal;
+}
+
+.calculator__keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
     .intro{
