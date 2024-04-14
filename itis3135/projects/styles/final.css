@@ -1,7 +1,7 @@
 body{
-    background-color: blue;
+    background-color: darkblue;
     text-align: center;
-    color: palevioletred;
+    color: pink;
     font-family: Helvetica;
     font-size: 14pt;
 }
@@ -11,6 +11,9 @@ a{
 }
 a:hover{
     color: pink;
+}
+footer, header, .center{
+    text-align: center;
 }
 main{
     text-align: left;
@@ -66,6 +69,7 @@ th {
 
 p {
     text-align: left;
+    color: tan;
 }
 figure {
     margin-top: 20px;
