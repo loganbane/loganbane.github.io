@@ -121,7 +121,7 @@ textarea{
   
   .calendar-table th,
   .calendar-table td {
-    padding: auto;
+    padding: 12px;
     text-align: center;
     
   }
