@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,10 +13,11 @@
     </header>
     <main>
         <h2>About Us</h2>
-        
-        <p>This page will house a table that has all their game, playoff, and practice dates. There will be
-            a JS interactivity on this page that will allow you to filter what the table shows.
-        </p>
+        <p>Find out when we play next by using our integrated calendar!</p>
+        <button id="prevMonth">Previous Month</button>
+        <button id="nextMonth">Next Month</button>
+        <div id="calendar"></div>
+        <div id="eventInfo"></div>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
@@ -26,5 +28,6 @@
         document.getElementById("validation_link_disability").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
     </script>
     <script src="scripts/HTML.Include.min.js"></script>
+    <script src="scripts/calendar.js"></script>
 </body>
 </html>

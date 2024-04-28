@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,13 +12,85 @@
         <div data-include="components/header.html"></div>
     </header>
     <main>
-        <h2>Photos of the Season</h2>
-        
-        <p>This page will house a slideshow photo libaray of moments throughout their season.</p>
+        <h2>Photo Library</h2>
+        <p>Welcome to our Photo Library! Here we will add pctures we take troughout the season so our fans and supporters can get to know us better.</p>
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 9</div>
+                <img src="images/court.JPEG" style="width:100%" alt="court">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 9</div>
+                <img src="images/game.JPEG" style="width:100%" alt="game">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 9</div>
+                <img src="images/Jump.JPEG" style="width:100%" alt="jump">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 9</div>
+                <img src="images/Alex.JPEG" style="width:100%" alt="alex">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 9</div>
+                <img src="images/Angel.JPEG" style="width:100%" alt="angel">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 9</div>
+                <img src="images/Caroline.JPEG" style="width:100%" alt="caroline">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 9</div>
+                <img src="images/josh.JPEG" style="width:100%" alt="josh">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 9</div>
+                <img src="images/Sabrina.JPG" style="width:100%" alt="sabrina">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 9</div>
+                <img src="images/Stacy.JPEG" style="width:100%" alt="stacy">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/court.JPEG" style="width:100%" onclick="currentSlide(1)" alt="court">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/game.JPEG" style="width:100%" onclick="currentSlide(2)" alt="game">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Jump.JPEG" style="width:100%" onclick="currentSlide(3)" alt="jump">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Alex.JPEG" style="width:100%" onclick="currentSlide(4)" alt="alex">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Angel.JPEG" style="width:100%" onclick="currentSlide(5)" alt="angel">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Caroline.JPEG" style="width:100%" onclick="currentSlide(6)" alt="caroline">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/josh.JPEG" style="width:100%" onclick="currentSlide(6)" alt="josh">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Sabrina.JPG" style="width:100%" onclick="currentSlide(6)" alt="sabrina">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Stacy.JPEG" style="width:100%" onclick="currentSlide(6)" alt="stacy">
+                </div>
+            </div>
+        </div>    
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/photo_library.js"></script>
     <script>
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
